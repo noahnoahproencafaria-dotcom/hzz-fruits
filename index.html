@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HZZ Fruits</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1020;
+      color: white;
+    }
+
+    header {
+      background: #151d35;
+      padding: 25px;
+      text-align: center;
+      border-bottom: 1px solid #293454;
+    }
+
+    header h1 {
+      color: #7c9cff;
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      color: #aab4d0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .banner {
+      background: linear-gradient(135deg, #202d5c, #18213d);
+      padding: 30px;
+      border-radius: 18px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .banner h2 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .banner p {
+      color: #c4cbe0;
+    }
+
+    .fruits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #151d35;
+      border: 1px solid #293454;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #7c9cff;
+    }
+
+    .fruit-icon {
+      font-size: 65px;
+      margin: 10px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+    }
+
+    .card p {
+      color: #aab4d0;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #7cffa8;
+      margin: 15px;
+    }
+
+    button {
+      background: #5865f2;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #7280ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #7f8aa8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🍎 HZZ Fruits</h1>
+    <p>Frutas • Trocas • Blox Fruits</p>
+  </header>
+
+  <main class="container">
+
+    <section class="banner">
+      <h2>Bem-vindo à HZZ Fruits!</h2>
+      <p>Encontre suas frutas favoritas e confira nosso catálogo.</p>
+      <button onclick="alert('Em breve você poderá entrar em contato!')">
+        Entrar em contato
+      </button>
+    </section>
+
+    <h2>🍇 Nossas frutas</h2>
+
+    <section class="fruits">
+
+      <div class="card">
+        <div class="fruit-icon">🐉</div>
+        <h3>Dragon</h3>
+        <p>Fruta lendária</p>
+        <div class="price">Consultar valor</div>
+        <button onclick="alert('Dragon selecionada!')">
+          Ver detalhes
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="fruit-icon">🦊</div>
+        <h3>Kitsune</h3>
+        <p>Fruta mítica</p>
+        <div class="price">Consultar valor</div>
+        <button onclick="alert('Kitsune selecionada!')">
+          Ver detalhes
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="fruit-icon">🍩</div>
+        <h3>Dough</h3>
+        <p>Fruta mítica</p>
+        <div class="price">Consultar valor</div>
+        <button onclick="alert('Dough selecionada!')">
+          Ver detalhes
+        </button>
+      </div>
+
+      <div class="card">
+        <div class="fruit-icon">🐆</div>
+        <h3>Leopard</h3>
+        <p>Fruta mítica</p>
+        <div class="price">Consultar valor</div>
+        <button onclick="alert('Leopard selecionada!')">
+          Ver detalhes
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 HZZ Fruits • Site de catálogo de Blox Fruits
+  </footer>
+
+</body>
+</html>
