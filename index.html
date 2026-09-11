@@ -13,48 +13,30 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0b1020;
+      background: #0b0b12;
       color: white;
     }
 
     header {
-      background: #151d35;
-      padding: 25px;
       text-align: center;
-      border-bottom: 1px solid #293454;
+      padding: 35px 15px;
+      background: linear-gradient(135deg, #15152b, #25254a);
     }
 
     header h1 {
-      color: #7c9cff;
       margin: 0;
-      font-size: 32px;
+      font-size: 42px;
+      color: #8b5cf6;
     }
 
     header p {
-      color: #aab4d0;
+      color: #c4c4d8;
     }
 
     .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-
-    .banner {
-      background: linear-gradient(135deg, #202d5c, #18213d);
-      padding: 30px;
-      border-radius: 18px;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .banner h2 {
-      margin-top: 0;
-      font-size: 28px;
-    }
-
-    .banner p {
-      color: #c4cbe0;
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
 
     .fruits {
@@ -64,129 +46,183 @@
     }
 
     .card {
-      background: #151d35;
-      border: 1px solid #293454;
-      border-radius: 16px;
-      padding: 20px;
+      background: #171725;
+      border: 1px solid #303047;
+      border-radius: 15px;
+      padding: 22px;
       text-align: center;
       transition: 0.2s;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      border-color: #7c9cff;
+      border-color: #8b5cf6;
     }
 
-    .fruit-icon {
-      font-size: 65px;
-      margin: 10px;
+    .emoji {
+      font-size: 55px;
     }
 
-    .card h3 {
-      margin: 10px 0;
+    .card h2 {
+      margin: 12px 0;
+      color: #c4b5fd;
     }
 
-    .card p {
-      color: #aab4d0;
-    }
-
-    .price {
-      font-size: 20px;
-      font-weight: bold;
-      color: #7cffa8;
-      margin: 15px;
+    .rarity {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: #7c3aed;
+      font-size: 13px;
+      margin-bottom: 15px;
     }
 
     button {
-      background: #5865f2;
-      color: white;
       border: none;
-      padding: 12px 20px;
-      border-radius: 10px;
+      background: #8b5cf6;
+      color: white;
+      padding: 11px 18px;
+      border-radius: 8px;
       cursor: pointer;
       font-weight: bold;
     }
 
     button:hover {
-      background: #7280ff;
+      background: #6d28d9;
     }
 
     footer {
       text-align: center;
+      color: #77778d;
       padding: 30px;
-      color: #7f8aa8;
     }
   </style>
 </head>
 
 <body>
-
   <header>
-    <h1>🍎 HZZ Fruits</h1>
-    <p>Frutas • Trocas • Blox Fruits</p>
+    <h1>HZZ Fruits</h1>
+    <p>Catálogo de frutas míticas do Blox Fruits</p>
   </header>
 
   <main class="container">
-
-    <section class="banner">
-      <h2>Bem-vindo à HZZ Fruits!</h2>
-      <p>Encontre suas frutas favoritas e confira nosso catálogo.</p>
-      <button onclick="alert('Em breve você poderá entrar em contato!')">
-        Entrar em contato
-      </button>
-    </section>
-
-    <h2>🍇 Nossas frutas</h2>
-
-    <section class="fruits">
+    <div class="fruits">
 
       <div class="card">
-        <div class="fruit-icon">🐉</div>
-        <h3>Dragon</h3>
-        <p>Fruta lendária</p>
-        <div class="price">Consultar valor</div>
-        <button onclick="alert('Dragon selecionada!')">
-          Ver detalhes
-        </button>
+        <div class="emoji">🐉</div>
+        <h2>Dragon</h2>
+        <span class="rarity">Mítica</span>
+        <p>Uma das frutas mais poderosas do jogo.</p>
+        <button onclick="selecionar('Dragon')">Selecionar</button>
       </div>
 
       <div class="card">
-        <div class="fruit-icon">🦊</div>
-        <h3>Kitsune</h3>
-        <p>Fruta mítica</p>
-        <div class="price">Consultar valor</div>
-        <button onclick="alert('Kitsune selecionada!')">
-          Ver detalhes
-        </button>
+        <div class="emoji">🦊</div>
+        <h2>Kitsune</h2>
+        <span class="rarity">Mítica</span>
+        <p>Fruta lendária com poderes de raposa.</p>
+        <button onclick="selecionar('Kitsune')">Selecionar</button>
       </div>
 
       <div class="card">
-        <div class="fruit-icon">🍩</div>
-        <h3>Dough</h3>
-        <p>Fruta mítica</p>
-        <div class="price">Consultar valor</div>
-        <button onclick="alert('Dough selecionada!')">
-          Ver detalhes
-        </button>
+        <div class="emoji">🐆</div>
+        <h2>Leopard</h2>
+        <span class="rarity">Mítica</span>
+        <p>Transforme-se em um poderoso leopardo.</p>
+        <button onclick="selecionar('Leopard')">Selecionar</button>
       </div>
 
       <div class="card">
-        <div class="fruit-icon">🐆</div>
-        <h3>Leopard</h3>
-        <p>Fruta mítica</p>
-        <div class="price">Consultar valor</div>
-        <button onclick="alert('Leopard selecionada!')">
-          Ver detalhes
-        </button>
+        <div class="emoji">🍩</div>
+        <h2>Dough</h2>
+        <span class="rarity">Mítica</span>
+        <p>Uma fruta muito usada em PvP.</p>
+        <button onclick="selecionar('Dough')">Selecionar</button>
       </div>
 
-    </section>
+      <div class="card">
+        <div class="emoji">🦖</div>
+        <h2>T-Rex</h2>
+        <span class="rarity">Mítica</span>
+        <p>Use poderes de um enorme dinossauro.</p>
+        <button onclick="selecionar('T-Rex')">Selecionar</button>
+      </div>
 
+      <div class="card">
+        <div class="emoji">🦣</div>
+        <h2>Mammoth</h2>
+        <span class="rarity">Mítica</span>
+        <p>Transforme-se em um mamute gigante.</p>
+        <button onclick="selecionar('Mammoth')">Selecionar</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">👻</div>
+        <h2>Spirit</h2>
+        <span class="rarity">Mítica</span>
+        <p>Controle poderes espirituais.</p>
+        <button onclick="selecionar('Spirit')">Selecionar</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">☠️</div>
+        <h2>Venom</h2>
+        <span class="rarity">Mítica</span>
+        <p>Use veneno e ataques devastadores.</p>
+        <button onclick="selecionar('Venom')">Selecionar</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🎮</div>
+        <h2>Control</h2>
+        <span class="rarity">Mítica</span>
+        <p>Controle uma área com poderes especiais.</p>
+        <button onclick="selecionar('Control')">Selecionar</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🌑</div>
+        <h2>Shadow</h2>
+        <span class="rarity">Mítica</span>
+        <p>Manipule sombras e energia sombria.</p>
+        <button onclick="selecionar('Shadow')">Selecionar</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🪐</div>
+        <h2>Gravity</h2>
+        <span class="rarity">Mítica</span>
+        <p>Use a gravidade para atacar seus inimigos.</p>
+        <button onclick="selecionar('Gravity')">Selecionar</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">❄️</div>
+        <h2>Yeti</h2>
+        <span class="rarity">Mítica</span>
+        <p>Tenha poderes de uma criatura congelante.</p>
+        <button onclick="selecionar('Yeti')">Selecionar</button>
+      </div>
+
+      <div class="card">
+        <div class="emoji">⛽</div>
+        <h2>Gas</h2>
+        <span class="rarity">Mítica</span>
+        <p>Manipule gás e ataques especiais.</p>
+        <button onclick="selecionar('Gas')">Selecionar</button>
+      </div>
+
+    </div>
   </main>
 
   <footer>
-    © 2026 HZZ Fruits • Site de catálogo de Blox Fruits
+    HZZ Fruits © 2026 — Catálogo demonstrativo
   </footer>
 
+  <script>
+    function selecionar(fruta) {
+      alert("Você selecionou a fruta " + fruta + "!");
+    }
+  </script>
 </body>
 </html>
